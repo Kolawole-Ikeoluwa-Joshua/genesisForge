@@ -31,3 +31,4 @@
 - Lifecycle Customization and Targeting
 - Using for_each
 - Self referencing & provisioner failure modes
+- Dynamic Blocks
