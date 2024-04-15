@@ -10,4 +10,4 @@ Terraforming AWS, Docker & Kubernetes
 
 ## Sections
 
-1. ![Terraform Basics & Modular Deployments using Containers](./terraform-docker/readme.md)
+1. [Terraform Basics & Modular Deployments using Containers](./terraform-docker/readme.md)
