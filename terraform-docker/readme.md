@@ -1,0 +1,32 @@
+# Concepts Covered:
+
+- Providers
+- Terraform Init
+- Terraform Dependency Lock
+- Terrafrom Plan and Apply
+- Referencing Resources
+- Terraform State
+- Terraform Console and Outputs
+- The Join Function
+- The Random Resource
+- Multiple Resources and Count
+- For Loops
+- Tainting and Updating Resources
+- State Locking and Breaking State
+- Terraform Import
+- Terraform Refresh and State rm
+- Variables, Varaibles Validation, Variables Definition Precedence
+- Variables and Outputs
+- Sensitive Variables and .tfvar files
+- Bind Mount and Local-Exec Provisioner
+- Local Values
+- Min and Max Functions, Expand Expression
+- Path References and String Interpolation
+- Maps and Lookups
+- Terraform Workspace
+- Modules
+- Module Variables
+- Terraform Graph
+- Module Outputs
+- Lifecycle Customization and Targeting
+- using for_each
