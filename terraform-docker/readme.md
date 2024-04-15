@@ -29,4 +29,5 @@
 - Terraform Graph
 - Module Outputs
 - Lifecycle Customization and Targeting
-- using for_each
+- Using for_each
+- Self referencing & provisioner failure modes
