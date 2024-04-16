@@ -6,7 +6,7 @@ variable "image" {
   default = {
     nodered = {
       dev  = "nodered/node-red:latest"
-      prod = "nodered/node-red:latest-minimal"
+      prod = "nodered/node-red:latest"
     }
     influxdb = {
       dev  = "quay.io/influxdb/influxdb:v2.0.2"

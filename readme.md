@@ -23,6 +23,8 @@ terraform workspace list
 
 terraform workspace show
 
+terraform workspace select <workspace-name>
+
 terraform validate
 
 terraform fmt
