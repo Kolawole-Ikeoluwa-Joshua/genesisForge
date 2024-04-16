@@ -32,3 +32,4 @@
 - Using for_each
 - Self referencing & provisioner failure modes
 - Dynamic Blocks
+- Nested Modules

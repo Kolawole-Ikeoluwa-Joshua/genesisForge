@@ -15,9 +15,13 @@ Terraforming AWS, Docker & Kubernetes
 ## Frequently Used Commands:
 
 ```
+terraform init
+
 terraform state list
 
 terraform workspace list
+
+terraform workspace show
 
 terraform validate
 
