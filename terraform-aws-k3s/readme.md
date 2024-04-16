@@ -16,7 +16,7 @@ terraform init
 local ==> plans and applies occur on machines you control. Terraform cloud is only used to store and sync state
 ```
 
-# Processes:
+## Processes:
 
 1. Networking Infrastructure Setup:
 
