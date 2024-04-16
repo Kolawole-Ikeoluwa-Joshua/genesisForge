@@ -11,6 +11,7 @@ Terraforming AWS, Docker & Kubernetes
 ## Sections
 
 1. [Terraform Basics & Modular Deployments using Containers](./terraform-docker/readme.md)
+2. [Three Tier Rancher K3s Deployment on AWS using Terraform](./terraform-aws-k3s/readme.md)
 
 ## Frequently Used Commands:
 
