@@ -21,5 +21,6 @@ local ==> plans and applies occur on machines you control. Terraform cloud is on
 1. Networking Infrastructure Setup:
 
 - Create VPC
-- Create Subnets (public & private)
+- Create AZs, Subnets (public & private)
 - Create Route Tables & Internet Gateway
+- Create Security Groups
