@@ -114,6 +114,6 @@ resource "aws_db_subnet_group" "vtl_rds_subnetgroup" {
   name       = "vtl_rds_subnetgroup"
   subnet_ids = aws_subnet.vtl_private_subnet.*.id
   tags = {
-    Name = "mtc_rds_sng"
+    Name = "vtl_rds_sng"
   }
 }

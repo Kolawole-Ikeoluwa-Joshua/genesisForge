@@ -25,3 +25,7 @@ local ==> plans and applies occur on machines you control. Terraform cloud is on
 - Create Route Tables & Internet Gateway
 - Create Security Groups
 - Create DB Subnet Group
+
+2. Kubernetes Control Plane Database (Amazon RDS MySQL):
+
+- Create RDS Instance
