@@ -22,4 +22,4 @@ local ==> plans and applies occur on machines you control. Terraform cloud is on
 
 - Create VPC
 - Create Subnets (public & private)
--
+- Create Route Tables & Internet Gateway
