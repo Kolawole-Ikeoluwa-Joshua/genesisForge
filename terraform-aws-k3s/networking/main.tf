@@ -108,3 +108,12 @@ resource "aws_security_group" "vtl_sg" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 }
+
+resource "aws_db_subnet_group" "vtl_rds_subnetgroup" {
+  count      = var.db_subnet_group == true ? 1 : 0
+  name       = "vtl_rds_subnetgroup"
+  subnet_ids = aws_subnet.vtl_private_subnet.*.id
+  tags = {
+    Name = "mtc_rds_sng"
+  }
+}

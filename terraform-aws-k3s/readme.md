@@ -24,3 +24,4 @@ local ==> plans and applies occur on machines you control. Terraform cloud is on
 - Create AZs, Subnets (public & private)
 - Create Route Tables & Internet Gateway
 - Create Security Groups
+- Create DB Subnet Group
