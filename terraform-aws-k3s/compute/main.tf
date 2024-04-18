@@ -13,8 +13,15 @@ data "aws_ami" "server_ami" {
 resource "random_id" "vtl_node_id" {
   byte_length = 2
   count       = var.instance_count
+  keepers = {
+    "key_name" = var.key_name
+  }
 }
 
+resource "aws_key_pair" "vtl_auth" {
+  key_name   = var.key_name
+  public_key = file(var.public_key_path)
+}
 resource "aws_instance" "vtl_node" {
   count         = var.instance_count
   instance_type = var.instance_type
@@ -22,7 +29,7 @@ resource "aws_instance" "vtl_node" {
   tags = {
     Name = "vtl_node-${random_id.vtl_node_id[count.index].dec}"
   }
-  #key_name = ""
+  key_name               = aws_key_pair.vtl_auth.id
   vpc_security_group_ids = [var.public_sg]
   subnet_id              = var.public_subnets[count.index]
   # user_data = ""

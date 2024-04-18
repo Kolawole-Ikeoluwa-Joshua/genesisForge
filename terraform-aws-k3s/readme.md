@@ -39,3 +39,7 @@ local ==> plans and applies occur on machines you control. Terraform cloud is on
 4. Kubernetes Nodes (EC2 Instances):
 
 - Create EC2 Instance
+- Create SSH Keys
+```
+ssh-keygen -t rsa
+```
