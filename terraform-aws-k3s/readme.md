@@ -35,3 +35,7 @@ local ==> plans and applies occur on machines you control. Terraform cloud is on
 - Create ALB Security Group & Subnets
 - Create ALB Target Group
 - Create ALB Listener
+
+4. Kubernetes Nodes (EC2 Instances):
+
+- Create EC2 Instance
