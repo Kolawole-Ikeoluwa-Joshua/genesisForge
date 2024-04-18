@@ -40,6 +40,16 @@ local ==> plans and applies occur on machines you control. Terraform cloud is on
 
 - Create EC2 Instance
 - Create SSH Keys
+
 ```
 ssh-keygen -t rsa
+```
+
+- Create Rancher K3s token using EC2 User Data & Terraform `templatefile`
+  ssh into ec2 instance and view kubernetes nodes
+
+```
+ubuntu@vtl-29208:~$ kubectl get nodes
+NAME        STATUS   ROLES                  AGE     VERSION
+vtl-29208   Ready    control-plane,master   5m19s   v1.29.3+k3s1
 ```
