@@ -15,7 +15,7 @@ module "networking" {
 # module "database" {
 #   source                 = "./database"
 #   db_storage             = 10
-#   db_engine_version      = "5.7"
+#   db_engine_version      = "8.0"   #5.7 engine version incurs costs
 #   db_instance_class      = "db.t3.micro"
 #   dbname                 = var.dbname
 #   dbuser                 = var.dbuser
@@ -27,7 +27,14 @@ module "networking" {
 # }
 
 module "loadbalancing" {
-  source         = "./loadbalancing"
-  public_sg      = module.networking.public_sg
-  public_subnets = module.networking.public_subnets
+  source                 = "./loadbalancing"
+  public_sg              = module.networking.public_sg
+  public_subnets         = module.networking.public_subnets
+  tg_port                = 80
+  tg_protocol            = "HTTP"
+  vpc_id                 = module.networking.vpc_id
+  lb_healthy_threshold   = 2
+  lb_unhealthy_threshold = 2
+  lb_timeout             = 3
+  lb_interval            = 30
 }

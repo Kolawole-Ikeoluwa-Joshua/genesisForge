@@ -33,3 +33,4 @@ local ==> plans and applies occur on machines you control. Terraform cloud is on
 3. Load Balancer (AWS Application Load Balancer):
 
 - Create ALB Security Group & Subnets
+- Create ALB Target Group
