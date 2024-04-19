@@ -37,4 +37,6 @@ terraform console
 terraform apply --auto-approve
 
 terraform destroy --auto-approve
+
+terraform refresh
 ```
