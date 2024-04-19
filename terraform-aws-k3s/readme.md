@@ -76,7 +76,7 @@ nginx-77d6466568-d5rx5   1/1     Running   0          5m31s
 
 - Create EC2 Compute ALB Target Group Attachment
 
-7. Use terraform `local-exec` Provisioner to SCP kubeconfig file to terraform machine:
+7. Use terraform `remote-exec` & `local-exec` Provisioners to SCP kubeconfig file to terraform machine:
 
 - install kubectl on terraform machine
 
