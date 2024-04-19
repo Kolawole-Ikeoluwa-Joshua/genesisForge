@@ -61,7 +61,7 @@ vtl-7672    Ready    control-plane,master   6s    v1.29.3+k3s1
 ```
 # deploy Nginx by creating a deployment manifest `deployment.yaml` on deployed ec2 instance
 
-ubuntu@vtl-27812:~$ kubectl create -f deployment.yaml 
+ubuntu@vtl-27812:~$ kubectl create -f deployment.yaml
 deployment.apps/nginx created
 
 ubuntu@vtl-27812:~$ kubectl get pods
@@ -71,3 +71,7 @@ nginx-77d6466568-d5rx5   1/1     Running   0          5m31s
 
 # access nginx from web browser using <ec2_public_ip:8000>
 ```
+
+6. Add EC2 to ALB Target Group:
+
+- Create EC2 Compute ALB Target Group Attachment

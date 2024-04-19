@@ -46,3 +46,9 @@ resource "aws_instance" "vtl_node" {
   }
 }
 
+resource "aws_lb_target_group_attachment" "vtl_tg_attach" {
+  count            = var.instance_count
+  target_group_arn = var.lb_target_group_arn
+  target_id        = aws_instance.vtl_node[count.index].id
+  port = 8000
+}
