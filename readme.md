@@ -39,4 +39,6 @@ terraform apply --auto-approve
 terraform destroy --auto-approve
 
 terraform refresh
+
+terraform output -json | jq
 ```
