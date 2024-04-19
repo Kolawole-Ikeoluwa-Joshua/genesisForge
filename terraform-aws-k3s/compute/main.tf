@@ -44,6 +44,15 @@ resource "aws_instance" "vtl_node" {
   root_block_device {
     volume_size = var.vol_size
   }
+  provisioner "local-exec" {
+    command = templatefile("${path.cwd}/scp_script.tpl",
+      {
+        nodeip  = self.public_ip
+        k3s_path = "${path.cwd}/../"
+        nodename = self.tags.Name
+      }
+    )
+  }
 }
 
 resource "aws_lb_target_group_attachment" "vtl_tg_attach" {

@@ -75,3 +75,24 @@ nginx-77d6466568-d5rx5   1/1     Running   0          5m31s
 6. Add EC2 to ALB Target Group:
 
 - Create EC2 Compute ALB Target Group Attachment
+
+7. Use terraform `local-exec` Provisioner to SCP kubeconfig file to terraform machine:
+
+- install kubectl on terraform machine
+
+```
+snap install kubectl --classic
+kubectl version --client
+```
+
+- open all ports on ec2 instance, Note: for testing dev environments only
+- deploy infrastructure
+- set kubeconfig on terraform machine
+
+```
+joshua:~/environment/terraform-aws $ export KUBECONFIG=../k3s-vtl_node-43223.yaml
+
+joshua:~/environment/terraform-aws $ kubectl get nodes
+NAME        STATUS   ROLES                  AGE     VERSION
+vtl-43223   Ready    control-plane,master   3m36s   v1.29.3+k3s1
+```
