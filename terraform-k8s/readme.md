@@ -13,3 +13,5 @@
   - apply k8s main.tf
 
 - Additional K8s Deployments
+  - create `terraform_remote_state` datasource for kubeconfig in aws deployments
+  - apply k8s main.tf
